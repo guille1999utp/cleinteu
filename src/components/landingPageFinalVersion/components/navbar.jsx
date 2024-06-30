@@ -47,7 +47,10 @@ export function Navbar() {
           </Link>
         </div>
         <div className="col-span-12 md:col-span-2 flex justify-center">
-          <Link href="/contactanos" className="group relative inline-flex h-10 items-center justify-center overflow-hidden rounded-3xl px-10 font-light bg-gradient-to-b from-pink_custom via-lightpink_custom to-yellow_custom text-white text-base">
+          <Link
+            href="https://wa.me/573124202020"
+            className="group relative inline-flex h-10 items-center justify-center overflow-hidden rounded-3xl px-10 font-light bg-gradient-to-b from-pink_custom via-lightpink_custom to-yellow_custom text-white text-base"
+          >
             <span className="pr-2">Contact</span>
             <Image src={mail} alt="mail icon" width={20} height={20} />
             <div className="absolute inset-0 flex h-full w-full justify-center transform skew-x-[-12deg] translate-x-[-100%] group-hover:duration-1000 group-hover:transform group-hover:skew-x-[-12deg] group-hover:translate-x-[100%]">
@@ -61,6 +64,7 @@ export function Navbar() {
           <Link
             href="/"
             className="col-span-12 min-[800px]:col-span-3 min-[800px]:pl-5 m-auto w-1/2 min-[800px]:w-full"
+            style={{ display: "flex", justifyContent: "center"}}
           >
             <Image src={LogoCliente} alt="benky logo" />
           </Link>
@@ -106,6 +110,7 @@ export function Navbar() {
               className="mr-2"
               target="_blank"
               rel="noopener noreferrer"
+              href=""
             >
               <Image
                 src={iconFacebook}
@@ -118,6 +123,7 @@ export function Navbar() {
               className="mr-2"
               target="_blank"
               rel="noopener noreferrer"
+              href=""
             >
               <Image
                 src={iconUser}
@@ -126,10 +132,7 @@ export function Navbar() {
                 height={25}
               />
             </Link>
-            <Link
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link target="_blank" rel="noopener noreferrer" href="">
               <Image
                 src={iconInstagram}
                 alt="icon linkedin"
@@ -146,7 +149,7 @@ export function Navbar() {
           </Link>
         </div>
       )}
-      <div className="min-[800px]:hidden flex justify-end absolute top-0 right-0 p-2 z-50">
+      <div className="min-[800px]:hidden flex justify-end absolute top-0 right-0 p-2 z-50 mt-8">
         <button onClick={() => setIsOpen(!isOpen)} className="p-2">
           {isOpen ? (
             <Image src={close} alt="close menu" height={35} width={35} />

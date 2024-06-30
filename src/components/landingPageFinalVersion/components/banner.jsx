@@ -21,10 +21,11 @@ import LogoCliente from "@/src/assets/logos/logocliente.png";
 import SectionAliados from "@/src/assets/logos/section-aliados.jpg";
 
 export const Banner = () => {
+
+
     return (
       <div className="flex flex-col h-full" id="home">
         <div className="flex-grow mt-32">
-
           <section
             className="grid grid-cols-12 mt-0 md:mt-48 relative"
             id="aboutUs"
@@ -47,9 +48,10 @@ export const Banner = () => {
             <div className="col-span-12 md:col-span-6 flex items-center h-full">
               <div className="p-10 2xl:p-22 m-10 bg-white rounded-2xl shadow-lg">
                 <h4 className="flex flex-col">
-   
                   <div className="text-3xl 2xl:text-6xl">
-                    <span className="font-medium">Bienvenidos a house media </span>
+                    <span className="font-medium">
+                      Bienvenidos a house media{" "}
+                    </span>
                     <span className="font-bold text-transparent bg-gradient-to-b from-pink_custom via-lightpink_custom to-yellow_custom bg-clip-text">
                       HouseMedia
                     </span>
@@ -78,25 +80,26 @@ export const Banner = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl text-center mb-6">
               <div className="pb-1">
                 <span className="font-extrabold text-blue_custom">En </span>
-                <span className="font-extrabold text-transparent bg-gradient-to-b from-pink_custom via-lightpink_custom to-yellow_custom bg-clip-text">
-
-                </span>
+                <span className="font-extrabold text-transparent bg-gradient-to-b from-pink_custom via-lightpink_custom to-yellow_custom bg-clip-text"></span>
                 <span className="font-semibold text-blue_custom">
-                  Así trabajamos en la activación de tu marca 
+                  Así trabajamos en la activación de tu marca
                 </span>
               </div>
-
             </h1>
             <p className="w-2/3 lg:w-1/2 text-base text-paragraph mb-6 text-center">
-            House Media es tu aliado en la organización de tu activación de marca, nos encargamos de todo.
+              House Media es tu aliado en la organización de tu activación de
+              marca, nos encargamos de todo.
             </p>
-            <button className="group relative inline-flex h-10 items-center justify-center overflow-hidden rounded-3xl px-10 font-light bg-gradient-to-b from-pink_custom via-lightpink_custom to-yellow_custom text-white text-base transition hover:scale-110 mb-20">
+            <a
+              href="https://wa.me/573124202020"
+              className="group relative inline-flex h-10 items-center justify-center overflow-hidden rounded-3xl px-10 font-light bg-gradient-to-b from-pink_custom via-lightpink_custom to-yellow_custom text-white text-base transition hover:scale-110 mb-20"
+            >
               <span className="pr-2">Contact</span>
               <Image src={mail} alt="mail icon" width={20} height={20} />
               <div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]">
                 <div className="relative h-full w-8 bg-white/20"></div>
               </div>
-            </button>
+            </a>
           </div>
 
           <section className="grid grid-cols-12 relative gap-6 mx-10 md:mx-20 py-20 z-10">
@@ -141,7 +144,6 @@ export const Banner = () => {
               </p>
             </div>
           </section>
-
         </div>
       </div>
     );
