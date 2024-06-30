@@ -20,6 +20,7 @@ import Frame18 from "@/src/assets/newLogos/Frame18.png";
 import LogoCliente from "@/src/assets/logos/logocliente.png";
 import SectionAliados from "@/src/assets/logos/section-aliados.jpg";
 
+import "../styles/imagesConfiguration.css";
 export const Banner = () => {
 
 
@@ -71,8 +72,6 @@ export const Banner = () => {
               src={SectionAliados}
               alt="Aliados"
               className="image-section"
-              width={"100%"}
-              style={{ width: "100% !important" }}
             />
           </section>
 
