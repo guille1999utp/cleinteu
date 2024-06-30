@@ -1,0 +1,14 @@
+.home_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home_content {
+    width: 100%;
+    max-width: 1240px;
+    box-sizing: border-box;
+    padding: 0 20px 60px 20px;
+    position: relative;
+}
+
