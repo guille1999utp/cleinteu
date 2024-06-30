@@ -5,7 +5,6 @@ import Link from 'next/link'
 import Image from 'next/image';
 
 import mail from "@/src/assets/logos/mail.png";
-import benkyLogo from '../../../assets/logos/Benky_logo_white 1.png';
 import iconFacebook from '../../../assets/logos/tabler_brand-facebook.png';
 import iconInstagram from '../../../assets/logos/tabler_brand-instagram.png';
 import iconUser from '../../../assets/logos/tabler_user-circle.png';
@@ -63,7 +62,7 @@ export function Navbar() {
             href="/"
             className="col-span-12 min-[800px]:col-span-3 min-[800px]:pl-5 m-auto w-1/2 min-[800px]:w-full"
           >
-            <Image src={benkyLogo} alt="benky logo" />
+            <Image src={LogoCliente} alt="benky logo" />
           </Link>
           <div className="col-span-12 grid grid-cols-12 items-center text-center h-full min-[800px]:h-auto">
             <Link
@@ -105,7 +104,6 @@ export function Navbar() {
           <div className="col-span-12 min-[800px]:col-span-2 flex justify-center">
             <Link
               className="mr-2"
-              href="https://www.facebook.com/Benky-Env%C3%ADos-de-dinero-100305172113627"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -118,7 +116,6 @@ export function Navbar() {
             </Link>
             <Link
               className="mr-2"
-              href="https://www.instagram.com/benky__/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -130,7 +127,6 @@ export function Navbar() {
               />
             </Link>
             <Link
-              href="https://www.linkedin.com/company/somosbenky/about/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -146,7 +142,7 @@ export function Navbar() {
       ) : (
         <div className="min-[800px]:hidden justify-between items-center py-5 gap-4">
           <Link href="/" className="pl-6 md:w-full flex">
-            <Image src={benkyLogo} alt="benky logo" width={100} height={60} />
+            <Image src={LogoCliente} alt="benky logo" width={100} height={60} />
           </Link>
         </div>
       )}
