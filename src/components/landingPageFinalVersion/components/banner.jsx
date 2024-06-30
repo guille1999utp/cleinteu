@@ -47,11 +47,9 @@ export const Banner = () => {
             <div className="col-span-12 md:col-span-6 flex items-center h-full">
               <div className="p-10 2xl:p-22 m-10 bg-white rounded-2xl shadow-lg">
                 <h4 className="flex flex-col">
-                  <span className="text-sm 2xl:text-4xl font-medium text-transparent bg-gradient-to-b from-whiteblue_custom via-whiteblue_custom2 to-whiteblue_custom3 bg-clip-text tracking-widest">
-                    Quienes somos
-                  </span>
+   
                   <div className="text-3xl 2xl:text-6xl">
-                    <span className="font-medium">Que es </span>
+                    <span className="font-medium">Bienvenidos a house media </span>
                     <span className="font-bold text-transparent bg-gradient-to-b from-pink_custom via-lightpink_custom to-yellow_custom bg-clip-text">
                       HouseMedia
                     </span>
